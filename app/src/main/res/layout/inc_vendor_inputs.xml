@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_vendor_name"
+            style="@style/Theme.NavDemo.textViewRowProduct"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:paddingStart="12dp"
+            android:text="@string/vendor_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+
+        <EditText
+            android:id="@+id/edt_vendor_name"
+            style="@style/Theme.NavDemo.edt"
+            android:layout_marginTop="8dp"
+            android:hint="@string/edt_vendor_name"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vendor_name" />
+
+
+
+        <TextView
+            android:id="@+id/tv_vendor_phone"
+            style="@style/Theme.NavDemo.textViewRowProduct"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="12dp"
+            android:text="@string/vendor_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_vendor_name"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/edt_vendor_phone"
+            style="@style/Theme.NavDemo.edt"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/baseline_local_phone_24"
+            android:hint="@string/edt_vendor_phone"
+            android:inputType="phone"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vendor_phone" />
+
+
+        <TextView
+            android:id="@+id/tv_vendor_email"
+            style="@style/Theme.NavDemo.textViewRowProduct"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="12dp"
+            android:text="@string/vendor_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_vendor_phone"
+            tools:ignore="RtlSymmetry" />
+
+
+        <EditText
+            android:id="@+id/edt_vendor_email"
+            style="@style/Theme.NavDemo.edt"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/baseline_alternate_email_24"
+            android:hint="@string/edt_vendor_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vendor_email" />
+
+
+        <TextView
+            android:id="@+id/tv_vendor_company"
+            style="@style/Theme.NavDemo.textViewRowProduct"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="12dp"
+            android:text="@string/vendor_company"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_vendor_email"
+            tools:ignore="RtlSymmetry" />
+
+
+        <EditText
+            android:id="@+id/edt_vendor_company"
+            style="@style/Theme.NavDemo.edt"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/baseline_business_24"
+            android:hint="@string/edt_vendor_company"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_vendor_company" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_save_update_vendor"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="@string/exBtnSave"
+        android:layout_marginBottom="64dp"
+        app:icon="@drawable/baseline_save_24" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

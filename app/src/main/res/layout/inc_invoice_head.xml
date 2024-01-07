@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp">
+
+    <TextView
+        android:id="@+id/inv_no"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:textColor="@color/darkBlue_gray_700"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/noTest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inv_date"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:textColor="@color/darkBlue_gray_700"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ven_name"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:textColor="@color/darkBlue_gray_700"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/vendor_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inv_no" />
+
+
+    <TextView
+        android:id="@+id/dep"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:textColor="@color/darkBlue_gray_700"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/receiving_department"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ven_name" />
+
+
+    <TextView
+        android:id="@+id/store"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/receiving_store"
+
+        android:textColor="@color/darkBlue_gray_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/inv_date"
+        app:layout_constraintTop_toBottomOf="@+id/inv_date" />
+
+    <TextView
+        android:id="@+id/des"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:text="@string/confirm_description"
+        android:textColor="@color/darkBlue_gray_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dep" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

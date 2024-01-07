@@ -1,0 +1,274 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.NavDemo" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/darkBlue_gray_700</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorPrimaryVariant">@color/darkBlue_gray_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/darkNavy_blue_500</item>
+        <item name="colorOnSurface">@color/darkNavy_blue_500</item>
+
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">@color/light_gray_200</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondaryContainer">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.NavDemo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NavDemo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.NavDemo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Style the cardView on the layout -->
+    <style name="Theme.NavDemo.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:padding">2dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+
+    <!-- Style the small add button on the layout -->
+    <style name="Theme.NavDemo.smallBtnAdd" parent="Widget.Material3.FloatingActionButton.Small.Primary">
+
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.FloatingActionButton</item>
+        <item name="srcCompat">@drawable/baseline_add_24</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+
+    <!-- Style the small del button on the layout -->
+    <style name="Theme.NavDemo.smallBtnDel" parent="Widget.Material3.FloatingActionButton.Small.Primary">
+
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.FloatingActionButton</item>
+        <item name="srcCompat">@drawable/baseline_delete_24</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+
+
+    <!-- Style the small setting button on the layout -->
+    <style name="Theme.NavDemo.smallBtnSetting" parent="Widget.Material3.FloatingActionButton.Small.Primary">
+
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.FloatingActionButton</item>
+        <item name="srcCompat">@drawable/baseline_settings_24</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+
+    <!-- Style the button on the bottom sheet layouts -->
+    <style name="Theme.NavDemo.fabBottomSheet" parent="Widget.Material3.FloatingActionButton.Primary">
+
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.FloatingActionButton</item>
+        <item name="srcCompat">@drawable/baseline_send</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_margin">12dp</item>
+
+    </style>
+
+
+    <!-- Style the button on the layouts -->
+    <style name="Theme.NavDemo.normalFab" parent="Widget.Material3.FloatingActionButton.Primary">
+
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.FloatingActionButton</item>
+        <item name="srcCompat">@drawable/baseline_add_24</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="android:layout_margin">16dp</item>
+
+    </style>
+
+
+    <!-- Style the EditText on the bottom sheet layouts -->
+    <style name="Theme.NavDemo.edt">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+
+
+    </style>
+
+    <!-- Style the layout input editText on the layout -->
+    <style name="Theme.NavDemo.layout_input.editText" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="paddingStart">6dp</item>
+        <item name="paddingEnd">6dp</item>
+
+    </style>
+
+
+    <!-- Style the input editText on the layout -->
+    <style name="Theme.NavDemo.spinners" >
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+
+    </style>
+
+
+
+    <!-- Style the input editText on the layout -->
+    <style name="Theme.NavDemo.edtInput" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:padding">16dp</item>
+
+    </style>
+
+    <!-- Style the chip -->
+    <style name="Theme.NavDemo.chip" parent="Widget.Material3.Chip.Filter.Elevated">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+    <!-- Style the toolbar on the fullscreen dialog layout -->
+    <style name="Theme.NavDemo.toolbar" parent="Widget.Material3.Toolbar">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="paddingEnd">16dp</item>
+        <item name="paddingStart">6dp</item>
+        <item name="navigationIcon">@drawable/baseline_close_24</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+
+
+    </style>
+
+
+    <!-- Style the input editText on the layout -->
+    <style name="Theme.NavDemo.dynamicList" >
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_behavior">@string/appbar_scrolling_view_behavior</item>
+
+    </style>
+
+
+    <!-- Style the TextView on the layout -->
+    <style name="Theme.NavDemo.sp_textView" >
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <!-- Style the TextView on the layout -->
+    <style name="Theme.NavDemo.textView" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+
+    <!-- Style the TextView on the row product layout -->
+    <style name="Theme.NavDemo.textViewRowProduct" >
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/lightBlue_gray_200</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+
+    <!-- Fullscreen dialog them-->
+    <style name="AppTheme.FullScreenDialog" parent="Theme.Material3.Light.Dialog">
+
+        <item name="colorPrimaryDark">@color/darkNavy_blue_500</item>
+        <item name="colorPrimary">@color/darkNavy_blue_500</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorPrimaryVariant">@color/darkBlue_gray_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/darkNavy_blue_500</item>
+        <item name="colorOnSurface">@color/darkNavy_blue_500</item>
+
+
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">@color/darkNavy_blue_500</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondaryContainer">@color/black</item>
+
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NavDemo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+
+</resources>

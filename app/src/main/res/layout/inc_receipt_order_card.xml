@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+
+
+    <TextView
+        android:id="@+id/title_department"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="12dp"
+        android:text="@string/receiving_department"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+
+    <Spinner
+        android:id="@+id/sp_department"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_gray_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_department" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_department"
+        style="@style/Theme.NavDemo.smallBtnAdd"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_department"
+        app:layout_constraintStart_toEndOf="@+id/sp_department"
+        app:layout_constraintTop_toTopOf="@+id/sp_department"
+        android:contentDescription="@string/description_btn_add"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_department_setting"
+        style="@style/Theme.NavDemo.smallBtnSetting"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/btn_setting"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_department"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_department"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_department"/>
+
+
+    <TextView
+        android:id="@+id/title_vendor"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="12dp"
+        android:text="@string/receiving_vendor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_department"
+        tools:ignore="RtlSymmetry" />
+
+    <Spinner
+        android:id="@+id/sp_vendor"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_gray_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_vendor" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_vendor"
+        style="@style/Theme.NavDemo.smallBtnAdd"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/description_btn_add"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_vendor"
+        app:layout_constraintStart_toEndOf="@+id/sp_vendor"
+        app:layout_constraintTop_toTopOf="@+id/sp_vendor"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_vendor_setting"
+        style="@style/Theme.NavDemo.smallBtnSetting"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/btn_setting"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_vendor"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_vendor"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_vendor"/>
+
+
+    <TextView
+        android:id="@+id/title_store"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="12dp"
+        android:text="@string/receiving_store"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_vendor"
+        tools:ignore="RtlSymmetry" />
+
+    <Spinner
+        android:id="@+id/sp_store"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_gray_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_store" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_store"
+        style="@style/Theme.NavDemo.smallBtnAdd"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/description_btn_add"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_store"
+        app:layout_constraintStart_toEndOf="@+id/sp_store"
+        app:layout_constraintTop_toTopOf="@+id/sp_store"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_store_setting"
+        style="@style/Theme.NavDemo.smallBtnSetting"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/btn_setting"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_store"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_store"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_store"/>
+
+
+    <TextView
+        android:id="@+id/title_description"
+        style="@style/Theme.NavDemo.textViewRowProduct"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:text="@string/receiving_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_store"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edt_receiving_description"
+        style="@style/Theme.NavDemo.edt"
+        android:layout_marginTop="8dp"
+        android:hint="@string/edt_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

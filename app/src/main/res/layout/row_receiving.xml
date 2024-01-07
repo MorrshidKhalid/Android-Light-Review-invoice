@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_card"
+    style="@style/Theme.NavDemo.Card">
+
+    <include layout="@layout/inc_receiving_head" />
+
+
+</com.google.android.material.card.MaterialCardView>

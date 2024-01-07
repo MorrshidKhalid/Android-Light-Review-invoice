@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_receivingOrder">
+
+
+    <fragment
+        android:id="@+id/nav_product"
+        android:name="com.example.navdemo.product.Product"
+        android:label="@string/menu_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_nav_item_to_newItem"
+            app:destination="@id/newProduct"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_vendor"
+        android:name="com.example.navdemo.info_required.vendor.Vendor"
+        android:label="@string/menu_vendor"
+        tools:layout="@layout/fragment_vendor" >
+        <action
+            android:id="@+id/action_nav_vendor_to_newVendorFragment"
+            app:destination="@id/newVendorFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_receivingOrder"
+        android:name="com.example.navdemo.receiving.ReceivingOrder"
+        android:label="@string/menu_receiving"
+        tools:layout="@layout/fragment_receiving_order" >
+        <action
+            android:id="@+id/action_nav_receivingOrder_to_addReceivingFragment"
+            app:destination="@id/addReceivingFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/newProduct"
+        android:name="com.example.navdemo.product.NewProduct"
+        android:label="@string/newProduct"
+        tools:layout="@layout/fragment_new_product" >
+        <action
+            android:id="@+id/action_newItem_to_nav_item"
+            app:destination="@id/nav_product"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_newItem_to_groupListFragment"
+            app:destination="@id/groupListFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_newItem_to_brandListFragment"
+            app:destination="@id/brandListFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupListFragment"
+        android:name="com.example.navdemo.info_required.listFragments.GroupListFragment"
+        android:label="@string/group_list"
+        tools:layout="@layout/fragment_group_list" >
+        <action
+            android:id="@+id/action_groupListFragment_to_newItem2"
+            app:destination="@id/newProduct"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/brandListFragment"
+        android:name="com.example.navdemo.info_required.listFragments.BrandListFragment"
+        android:label="@string/brand_list"
+        tools:layout="@layout/fragment_brand_list" >
+        <action
+            android:id="@+id/action_brandListFragment_to_newItem"
+            app:destination="@id/newProduct"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/newVendorFragment"
+        android:name="com.example.navdemo.info_required.vendor.NewVendorFragment"
+        android:label="@string/newVendor"
+        tools:layout="@layout/fragment_new_vendor" />
+    <fragment
+        android:id="@+id/addReceivingFragment"
+        android:name="com.example.navdemo.receiving.AddReceivingFragment"
+        android:label="@string/add_receiving"
+        tools:layout="@layout/fragment_add_receiving" >
+        <action
+            android:id="@+id/action_addReceivingFragment_to_nav_vendor"
+            app:destination="@id/nav_vendor" />
+        <action
+            android:id="@+id/action_addReceivingFragment_to_departmentFragment"
+            app:destination="@id/departmentFragment" />
+        <action
+            android:id="@+id/action_addReceivingFragment_to_storeFragment"
+            app:destination="@id/storeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/departmentFragment"
+        android:name="com.example.navdemo.info_required.listFragments.DepartmentListFragment"
+        android:label="@string/department_all"
+        tools:layout="@layout/fragment_department" />
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="com.example.navdemo.info_required.listFragments.StoreListFragment"
+        android:label="@string/store_all"
+        tools:layout="@layout/fragment_store" />
+
+
+</navigation>

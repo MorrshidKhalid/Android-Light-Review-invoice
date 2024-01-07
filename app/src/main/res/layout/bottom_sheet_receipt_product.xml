@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_inQuantity"
+        style="@style/Theme.NavDemo.edt"
+        android:hint="@string/edt_receipt_empty"
+        android:inputType="number"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp">
+
+        <Spinner
+            android:id="@+id/sp_r_group"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_gray_border"/>
+
+
+        <Spinner
+            android:id="@+id/sp_r_products"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_gray_border"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_addReceiptProduct"
+            style="@style/Theme.NavDemo.fabBottomSheet"
+            android:layout_margin="4dp"
+            android:contentDescription="@string/description_btn_add"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

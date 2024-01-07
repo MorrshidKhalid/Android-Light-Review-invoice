@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <!--  Only Dashboard -->
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_receivingOrder"
+            android:icon="@drawable/ic_menu_receiving"
+            android:title="@string/menu_receiving" />
+
+    </group>
+
+
+    <!--  All Stock Info -->
+    <item
+        android:id="@+id/stockInfo"
+        android:title="@string/menu_stock_info">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_product"
+                    android:icon="@drawable/ic_menu_in_box"
+                    android:title="@string/menu_product" />
+
+
+
+                <item
+                    android:id="@+id/nav_vendor"
+                    android:icon="@drawable/ic_menu_vendor"
+                    android:title="@string/menu_vendor" />
+
+
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

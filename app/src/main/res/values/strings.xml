@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">Review my invoice</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Developer</string>
+    <string name="nav_header_subtitle">MorrshidKhalid2@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_setting">Setting</string>
+
+
+
+    <!--  Menu and label strings  -->
+    <string name="menu_stock_info">Stock Info</string>
+    <string name="menu_product">Products</string>
+    <string name="menu_department">Department</string>
+    <string name="menu_vendor">Vendor</string>
+    <string name="menu_store">Store</string>
+    <string name="menu_receiving">Receiving</string>
+
+
+    <!--  Label of fragments -->
+    <string name="newProduct">Add new product</string>
+    <string name="group_list">All group(s)</string>
+    <string name="brand_list">All brand(s)</string>
+    <string name="update">Update</string>
+    <string name="vendor">Vendor(s)</string>
+    <string name="newVendor">Add new vendor</string>
+    <string name="vendor_update">Update vendor information</string>
+    <string name="add_receiving">New receiving</string>
+    <string name="department_all">All department(s)</string>
+    <string name="store_all">All store(s)</string>
+    <string name="product_update">Update product info</string>
+    <string name="product_details">Product details</string>
+
+
+    <!-- Input hints -->
+    <string name="edt_product_name">Please enter product name here</string>
+    <string name="edt_product_des">Product description*</string>
+    <string name="edt_product_note">Enter eny note about this product</string>
+    <string name="check_box">Returnable item</string>
+    <string name="group_bottom_sheet">Please enter group name here</string>
+    <string name="brand_bottom_sheet">Please enter brand name here</string>
+    <string name="department_bottom_sheet">Please enter department name here</string>
+    <string name="store_bottom_sheet">Please enter store name here</string>
+    <string name="update_hint">Please enter your update here</string>
+    <string name="edt_vendor_name">Please enter vendor name here</string>
+    <string name="edt_vendor_phone">Please enter vendor phone here</string>
+    <string name="edt_vendor_email">For example: Example@email.com</string>
+    <string name="edt_vendor_company">Please enter vendor company name here</string>
+    <string name="edt_description">Please enter your receiving description</string>
+    <string name="edt_receipt_empty">No products selected yet</string>
+    <string name="qty">Quantity</string>
+
+    <!-- Buttons -->
+    <string name="exBtnSave">Save a new product</string>
+    <string name="exBtnUpdate">Update</string>
+    <string name="exBtnContent">Place product</string>
+    <string name="exExpand">Show more information</string>
+    <string name="exShrink">Expand</string>
+    <string name="btnAdd">Add product</string>
+
+
+    <!-- Menu-->
+    <string name="save">Save</string>
+    <string name="refresh">Refresh</string>
+    <string name="pdf">PDF</string>
+    <string name="more">More</string>
+    <string name="edit">Edit</string>
+    <string name="delete">delete</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  Content Description  -->
+    <string name="newItemScroll">Need scrolling in order to satisfy all components on the view</string>
+    <string name="description_btn_add">Make it easy to add new things</string>
+    <string name="description_btn_del">Make it easy to delete things</string>
+    <string name="description_btn_edit">Make it easy to edit things</string>
+    <string name="description_icon">icon to clarify</string>
+    <string name="btn_setting">Make it easy to navigate to indented destination </string>
+    <string name="btn_expand">Expand the layout to show more information</string>
+    <string name="btn_shrink">Shrink the layout to hind info or give more space</string>
+    <string name="input">Get the input from the user screen as text (String)</string>
+    <string name="empty_img">The image in which tell you if the list has items or not</string>
+    <string name="list_img">The image in which tell about the (Product, Vendor)</string>
+    <string name="increase">button to increase quantity</string>
+    <string name="decrease">button to decrease quantity</string>
+    <string name="img_button">Show more actions user may want to do</string>
+
+    <!-- Error message and warning -->
+    <string name="error_message">Something happened error</string>
+    <string name="fill_msg">Fill required</string>
+    <string name="group_msg">Group must have data</string>
+    <string name="brand_msg">Brand must have data</string>
+    <string name="exists">Name already exists</string>
+    <string name="sp_brand">You can not add a new brand without selection a group try to add one</string>
+    <string name="product_msg">No product selected</string>
+    <string name="product_deletion">Can\'t delete product related to some invoice</string>
+    <string name="entReceipt">Make sure that all entries are correct and not empty</string>
+
+
+    <!-- Confirm message -->
+    <string name="confirm">Item added successfully!</string>
+    <string name="confirm_vendor">Vendor added successfully!</string>
+    <string name="deleted">Item deleted successfully!</string>
+    <string name="deletedInvoice">Invoice deleted successfully!</string>
+    <string name="confirm_title">Confirm</string>
+    <string name="confirm_description">Are you sure you want to delete? this option will delete all brands that related to this group!</string>
+    <string name="confirm_r">Are you sure you want to delete? this option subtract all products quantity related to this invoice!</string>
+    <string name="confirm_p">Are you sure you want to delete this product?</string>
+    <string name="confirm_v">Are you sure you want to delete this Vendor? This vendor will be deleted from all related invoices</string>
+    <string name="confirm_update">Name updated!</string>
+    <string name="confirm_update_info">Info updated!</string>
+    <string name="prevent_deletion">This item can\'t be deleted!</string>
+    <string name="prevent_update">This item can\'t be updated!</string>
+
+
+    <!-- Text view descriptions-->
+    <string name="quantity">Available </string>
+    <string name="p_name">Product name* </string>
+    <string name="p_des">Product description </string>
+    <string name="p_note">Note* </string>
+    <string name="vendor_name">Vendor name* </string>
+    <string name="vendor_phone">Vendor phone* </string>
+    <string name="vendor_email">Vendor email@* </string>
+    <string name="vendor_company">Vendor company* </string>
+    <string name="receiving_description">Description* </string>
+    <string name="receiving_department">Department* </string>
+    <string name="receiving_vendor">Vendor* </string>
+    <string name="receiving_store">Store* </string>
+    <string name="receipt_quantity">Count* </string>
+
+    <!-- Test text-->
+    <string name="noTest">Inv0002</string>
+    <string name="date">03/12/2023</string>
+    <string name="gTest">Electronics</string>
+    <string name="countTest">2</string>
+
+    <!-- Options text-->
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="leave">Leave</string>
+    <string name="stay">Stay</string>
+
+
+    <!-- Button text-->
+    <string name="btnDelete">Delete</string>
+    <string name="btnEditText">Edit</string>
+
+
+    <!-- columns body-->
+    <string name="group">Group</string>
+    <string name="brand">Brand</string>
+    <string name="color">Color</string>
+    <string name="uom">UOM</string>
+    <string name="received">Quantity</string>
+
+
+    <!-- Filter chip-->
+    <string name="ch_all">All</string>
+    <string name="ch_receiving">Receiving</string>
+    <string name="ch_export">Export</string>
+
+
+    <!-- Spinner default value.-->
+    <array name="spinner_option">
+        <item>There is no added options :(</item>
+    </array>
+
+    <array name="spinner_empty">
+        <item>-- Add new group --</item>
+    </array>
+
+</resources>

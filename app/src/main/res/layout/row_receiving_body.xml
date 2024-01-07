@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/lightBlue_gray_200">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:id="@+id/body_product"
+            android:textColor="@color/light_gray"
+            android:text="@string/menu_product" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/body_uom"
+            android:textColor="@color/light_gray"
+            android:text="@string/uom" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/body_color"
+            android:textColor="@color/light_gray"
+            android:text="@string/color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/body_quantity"
+            android:textColor="@color/light_gray"
+            android:text="@string/received" />
+
+</TableRow>

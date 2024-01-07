@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <EditText
+            android:id="@+id/edt_vendor_name"
+            style="@style/Theme.NavDemo.edt"
+            android:layout_marginTop="8dp"
+            android:hint="@string/edt_vendor_name"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/edt_vendor_phone"
+            style="@style/Theme.NavDemo.edt"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/baseline_local_phone_24"
+            android:hint="@string/edt_vendor_phone"
+            android:inputType="phone"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_vendor_name" />
+
+
+
+        <EditText
+            android:id="@+id/edt_vendor_email"
+            style="@style/Theme.NavDemo.edt"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/baseline_alternate_email_24"
+            android:hint="@string/edt_vendor_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_vendor_phone" />
+
+
+        <EditText
+            android:id="@+id/edt_vendor_company"
+            style="@style/Theme.NavDemo.edt"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/baseline_business_24"
+            android:hint="@string/edt_vendor_company"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_vendor_email" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_add_update_vendor"
+            style="@style/Theme.NavDemo.normalFab"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/description_btn_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_vendor_company"
+            app:srcCompat="@drawable/baseline_update_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
