@@ -1,9 +1,11 @@
 #Light Android application that help the user to store info about invoice in his real life.
 
 This application made up of one main process which is shown down:
+
 ![use-case](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/627fd631-fe9b-4573-927f-b9812efc2584)
 
 ER-diagram:
+
 ![ER](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/533f7d1a-746c-47bb-93c9-a55dfe64281a)
 
 
@@ -12,18 +14,18 @@ ER-diagram:
 - Store products by category.
 
 Pic from inside the app:
-![Screenshot_20240107-114913](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/c6864102-6601-43ab-a5a5-13fd998bd4e3)
 
+![D](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/4a830c7d-afab-4047-bd70-cf6bf783124e)
 
-![Screenshot_20240107-115634](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/e57283ac-2b5b-413c-a0fe-fa6483baf4b5)
+![page 11](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/51755079-d3f0-46c0-a4be-392d050e2683)
 
+![Page 7](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/0897f4ff-5104-4e2b-8628-f8b9fe112674)
 
-![Screenshot_20240107-115850](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/4f9cf03b-16d8-40d8-9568-10a74859994b)
+![Page 8](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/15210233-680c-425d-bd08-a17f4de48834)
 
+![page 9](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/3fa1a0a7-7204-4d92-9524-7c9ece5e139a)
 
-
-![Screenshot_20240107-121832](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/888fc389-5e57-4f38-95b0-f841d779dcd3)
-
+![page 10](https://github.com/MorrshidKhalid/Android-Light-Review-invoice/assets/115463057/3765246f-feed-4a37-9a5e-180dc97a9ab9)
 
 
 
