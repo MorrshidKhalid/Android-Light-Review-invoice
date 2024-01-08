@@ -30,3 +30,8 @@ Pic from inside the app:
 
 
   I hope this project will helped you at any way :) .
+
+You can see the app functional on YouTube 
+
+
+https://youtu.be/VhNUrgIbIIQ?si=nuHJSIDJ3PiaL4oI
